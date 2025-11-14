@@ -31,4 +31,16 @@ values (0102038807,'Eduardo','Zhinin','Eduardo@gmail.com','02/12/2004')
 insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
 values (0102038808,'Martin','Gonzales','martin@gmail.com','23/06/2001')
 
+insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
+values (1702038808,'Gaby','Gonzalez','gaby@gmail.com','23/06/2001')
+
+insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
+values (1702038809,'Ana','Marta','ana@gmail.com','23/06/2001')
+
 select * from estudiantes
+
+select nombre,cedula from estudiantes
+
+select nombre from estudiantes where cedula like '17%'
+
+select nombre,apellido from estudiantes where nombre like 'A%'

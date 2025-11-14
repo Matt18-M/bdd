@@ -40,3 +40,9 @@ insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
 values(0010, '22001', '50,40', 'D', '15/01/2024', '09:15')
 
 select * from transacciones
+
+select * from transacciones where tipo like 'D%'
+
+select * from transacciones where monto between '200' and '2000'
+
+select codigo,monto,tipo,fecha from transacciones where fecha is not null
