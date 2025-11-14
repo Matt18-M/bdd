@@ -60,7 +60,7 @@ select * from clientes where edad is null
 select * from clientes where edad is not null
 
 --consulta de datos diferentes a un valor
-select * from clientes where edad >< 15
+select * from clientes where edad <> 15
 select * from clientes where edad != 15
 
 --actualiza datos en la tabla clientes
@@ -71,3 +71,11 @@ delete from clientes where cedula ='0150560222'
 
 --consulta de datos por mes en especifico
 select * from clientes  where extract(month from fecha) = 9  -- Septiembre
+
+--consulta de datos que al usar and se cumplan ambas condiciones
+select * from clientes
+where nombre = 'Mateo' and apellido = 'Molina'
+
+--consulta de datos que al usar or se cumpla una de las dos condiciones
+select * from clientes 
+where nombre = 'Roberto' or edad = 22
