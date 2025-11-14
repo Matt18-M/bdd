@@ -40,6 +40,9 @@ values (01210,05810,'10/10/2010','1000,10')
 insert into cuentas (numero_cuenta,cedula_primaria,fecha_creacion,saldo)
 values (01211,05811,'10/10/2025','1034,10')
 
+insert into cuentas (numero_cuenta,cedula_primaria,fecha_creacion,saldo)
+values (01212,17811,'10/10/2024','1034,10')
+
 select * from cuentas
 
 select numero_cuenta,saldo from cuentas
@@ -48,3 +51,6 @@ select * from cuentas where fecha_creacion between '13/09/2025' and '13/11/2025'
 
 select numero_cuenta,saldo from cuentas where fecha_creacion between '13/09/2025' and '13/11/2025'
 
+update cuentas set saldo='10' where cedula_primaria like '17%' 
+
+select * from cuentas

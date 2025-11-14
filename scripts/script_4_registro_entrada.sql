@@ -37,6 +37,12 @@ values (068809,'0102556609','10/11/2025','07:59')
 insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
 values (068810,'0102556610','10/11/2025','08:00')
 
+insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
+values (068811,'0102556610','10/08/2025','08:00')
+
+insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
+values (068812,'0102556610','10/08/2025','08:00')
+
 select * from registros_entrada
 
 select cedula_empleado,fecha,hora from registros_entrada
@@ -44,3 +50,7 @@ select cedula_empleado,fecha,hora from registros_entrada
 select * from registros_entrada where hora between '7:00' and '14:00'
 
 select * from registros_entrada where hora > '8:00'
+
+update registros_entrada set cedula_empleado = '082345679' where fecha between '01/08/2025' and '31/08/2025'
+
+select * from registros_entrada

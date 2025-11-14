@@ -37,6 +37,9 @@ values(016009,'Candy Crush')
 insert into videojuegos (codigo,nombre,valoracion)
 values(016010,'Minecraft',9)
 
+insert into videojuegos (codigo,nombre,valoracion)
+values(016011,'COD',10)
+
 select * from videojuegos
 
 select * from videojuegos where nombre like 'C%'
@@ -44,3 +47,7 @@ select * from videojuegos where nombre like 'C%'
 select * from videojuegos where valoracion between 9 and 10
 
 select * from videojuegos where descripcion is null
+
+update videojuegos set descripcion = 'Mejor Puntuado' where valoracion > 9
+
+select * from videojuegos

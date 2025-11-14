@@ -4,7 +4,7 @@ codigo int not null,
 nombre varchar(50) not null,
 descripcion varchar(200),
 precio money not null,
-stock int  not null,
+stock int ,
 constraint script_pk primary key(codigo)
 )
 insert into productos (codigo,nombre,descripcion,precio,stock)
@@ -37,6 +37,9 @@ values (010211,'Queso','1',25)
 insert into productos (codigo,nombre,precio,stock)
 values (010212,'Mayonesa','2,23',5)
 
+insert into productos (codigo,nombre,precio)
+values (010213,'Atun','1,23')
+
 select * from productos
 
 select * from productos where nombre like 'Q%'
@@ -44,3 +47,7 @@ select * from productos where nombre like 'Q%'
 select * from productos where descripcion is null
 
 select * from productos where precio between '2' and '3'
+
+update productos set stock=0 where stock is null
+
+select * from productos

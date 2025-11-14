@@ -39,6 +39,15 @@ values(0009, '18803', '45,25', 'D', '23/01/2024', '07:30')
 insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
 values(0010, '22001', '50,40', 'D', '15/01/2024', '09:15')
 
+insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
+values(0016, '22003', '450,40', 'D', '15/09/2024', '16:15')
+
+insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
+values(0014, '22004', '150,40', 'D', '15/09/2024', '18:15')
+
+insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
+values(0015, '22005', '350,40', 'D', '18/09/2024', '19:15')
+
 select * from transacciones
 
 select * from transacciones where tipo like 'D%'
@@ -46,3 +55,11 @@ select * from transacciones where tipo like 'D%'
 select * from transacciones where monto between '200' and '2000'
 
 select codigo,monto,tipo,fecha from transacciones where fecha is not null
+
+update transacciones 
+set tipo ='T' 
+where monto > '100' and monto < '500'
+and extract (month from fecha)=9
+and hora between '14:00' and  '20:00' 
+
+select * from transacciones
