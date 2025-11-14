@@ -37,6 +37,10 @@ values (1702038808,'Gaby','Gonzalez','gaby@gmail.com','23/06/2001')
 insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
 values (1702038809,'Ana','Marta','ana@gmail.com','23/06/2001')
 
+insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
+values (1702038805,'Ana','Marta','ana@gmail.com','23/06/2001')
+
+
 select * from estudiantes
 
 select nombre,cedula from estudiantes
@@ -47,4 +51,7 @@ select nombre,apellido from estudiantes where nombre like 'A%'
 
 update estudiantes set apellido='Hernandez' where cedula like '17%' 
 
-select * from estudiantes
+select * from estudiantes where cedula like '%05'
+
+delete from estudiantes where cedula like '%05'
+

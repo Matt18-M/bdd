@@ -8,16 +8,16 @@ constraint script5_pk primary key(codigo)
 )
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
-values(016001,'Spiderman','Juego de superheroe',5)
+values(016001,'Spiderman','Juego de superheroe',8)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
-values(016002,'Read Redeption 2','Juego de la antiguedad',5)
+values(016002,'Read Redeption 2','Juego de la antiguedad',10)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
-values(016003,'GT V','Juego mundo abierto',4.5)
+values(016003,'GT V','Juego mundo abierto',6.5)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
-values(016004,'Tetris','Juego Retro',5)
+values(016004,'Tetris','Juego Retro',7)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
 values(016005,'Pac-Man','Juego retro',5)
@@ -51,3 +51,5 @@ select * from videojuegos where descripcion is null
 update videojuegos set descripcion = 'Mejor Puntuado' where valoracion > 9
 
 select * from videojuegos
+
+delete from videojuegos where valoracion < 7

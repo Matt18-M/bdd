@@ -46,7 +46,7 @@ insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
 values(0014, '22004', '150,40', 'D', '15/09/2024', '18:15')
 
 insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
-values(0015, '22005', '350,40', 'D', '18/09/2024', '19:15')
+values(0017, '22005', '350,40', 'D', '18/08/2025', '15:15')
 
 select * from transacciones
 
@@ -63,3 +63,7 @@ and extract (month from fecha)=9
 and hora between '14:00' and  '20:00' 
 
 select * from transacciones
+
+delete from transacciones 
+where hora between '14:00' and '18:00'
+and fecha between '01/08/2025' and '31/08/2025'
