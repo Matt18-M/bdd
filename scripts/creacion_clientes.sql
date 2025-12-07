@@ -79,3 +79,34 @@ where nombre = 'Mateo' and apellido = 'Molina'
 --consulta de datos que al usar or se cumpla una de las dos condiciones
 select * from clientes 
 where nombre = 'Roberto' or edad = 22
+
+
+--los 10 inserts
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560817','Mónica','García',2);
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560711','Luis','Pérez',0);
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560722','Ana','Rodríguez',3);
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560733','Carlos','Sánchez',1);
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560744','Sofía','López',2);
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560755','Pedro','Martínez',1);
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560766','Laura','Fernández',0);
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560777','Javier','Díaz',4);
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560788','Elena','Ruiz',1);
+insert into clientes (cedula, nombre, apellido, numero_hijos)
+values('0150560221','Rosa','Elvira',2);
+
+--foreign key relacionar tablas
+--ejemplo
+alter table cuentas
+add constraint cuentas_usuario_fk 
+foreign key (cedula_primaria)
+references usuario(cedula)
+

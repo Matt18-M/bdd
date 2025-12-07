@@ -8,40 +8,40 @@ constraint script5_pk primary key(codigo)
 )
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
-values(016001,'Spiderman','Juego de superheroe',8)
+values(16001,'Spiderman','Juego de superheroe',8)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
-values(016002,'Read Redeption 2','Juego de la antiguedad',10)
+values(16002,'Read Redeption 2','Juego de la antiguedad',10)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
-values(016003,'GT V','Juego mundo abierto',6.5)
+values(16003,'GT V','Juego mundo abierto',6.5)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
-values(016004,'Tetris','Juego Retro',7)
+values(16004,'Tetris','Juego Retro',7)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
-values(016005,'Pac-Man','Juego retro',5)
+values(16005,'Pac-Man','Juego retro',5)
 
 insert into videojuegos (codigo,nombre)
-values(016006,'FIFA 25')
+values(16006,'FIFA 25')
 
 insert into videojuegos (codigo,nombre)
-values(016007,'Mario Bros')
+values(16007,'Mario Bros')
 
 insert into videojuegos (codigo,nombre)
-values(016008,'Pokemon')
+values(16008,'Pokemon')
 
 insert into videojuegos (codigo,nombre)
-values(016009,'Candy Crush')
+values(16009,'Candy Crush')
 
 insert into videojuegos (codigo,nombre,valoracion)
-values(016010,'Minecraft',9)
+values(16010,'Minecraft',9)
 
 insert into videojuegos (codigo,nombre,valoracion)
-values(016011,'COD',10)
+values(16011,'COD',10)
 
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
-values(07563, 'Call of Duty', 'juego de terror', 9);
+values(7563, 'Call of Duty', 'juego de terror', 9);
 
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values(85421, 'Free Fire', 'juego de accion', 7);
@@ -59,7 +59,7 @@ insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values(54682, 'Tom and Jerry', 'juego de comedia', 8);
 
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
-values(01456, 'Ajedres', 'juego de psicoligia', 6);
+values(1456, 'Ajedres', 'juego de psicoligia', 6);
 
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values(70215, 'God of Ward', 'juego de aprendisaje', 7);
@@ -70,6 +70,8 @@ values(63240, 'Crash', 'juego de deprote', 9);
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values(63549, 'Dragon Ball', 'juego de baile', 8);
 
+insert into videojuegos(codigo, nombre, descripcion, valoracion)
+values(63550, 'God of War', 'Guerra', 4);
 
 select * from videojuegos
 

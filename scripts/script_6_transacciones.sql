@@ -109,3 +109,4 @@ select * from transacciones
 where codigo between 1 and 5
 and numero_cuenta = '22002' or numero_cuenta = '22004'
 and fecha between '26/05/2025' and '29/05/2025'
+

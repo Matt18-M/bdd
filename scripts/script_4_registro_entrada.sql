@@ -106,3 +106,31 @@ and hora between '08:00' and '12:00'
 or extract(month from fecha) = 9 
 and cedula_empleado like '08%' 
 and hora between '09:00' and '13:00' 
+
+-------------------
+alter table registros_entrada
+add column codigo_empleado int;
+
+--insert
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (1, '0102030401', '2023-08-10', '08:15', 2201);
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (2, '0102030402', '2023-09-05', '09:30', 2202);
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (3, '0102030403', '2023-10-12', '10:45', 2203);
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (4, '0102030404', '2023-08-25', '11:20', 2204);
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (5, '0102030405', '2023-11-08', '12:10', 2205);
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (6, '0102030406', '2023-09-18', '08:50', 2206);
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (7, '0102030407', '2023-12-05', '09:40', 2207);
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (8, '0102030408', '2023-10-30', '10:25', 2208);
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (9, '0102030409', '2023-11-22', '11:55', 2209);
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
+values (10, '0102030410', '2023-12-20', '12:40', 2210);
+
+

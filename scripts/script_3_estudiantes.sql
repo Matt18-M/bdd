@@ -29,58 +29,36 @@ insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
 values (0102038807,'Eduardo','Zhinin','Eduardo@gmail.com','02/12/2004')
 
 insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (0102032808,'Martin','Gonzales','martin@gmail.com','23/06/2001')
+values (0102038808,'Martin','Gonzales','martin@gmail.com','23/06/2001')
 
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1702035808,'Gaby','Gonzalez','gaby@gmail.com','23/06/2001')
+alter table estudiantes
+add column codigo_profesor int;
 
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1702038809,'Ana','Marta','ana@gmail.com','23/06/2001')
-
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1702038805,'Ana','Marta','ana@gmail.com','23/06/2001')
-
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1235476800,'Raul','Martínez','raumart01@gmail.com','04/02/2003');
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1735476802,'Mario','Guaman','MarioG25@gmail.com', '08/12/2000');
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1235476803,'Roberto','Quishpe','RobQuishpe64@gmail.com','29/06/2005');
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1735476804,'Paul','Noguera','PaulNog55@gmail.com','22/07/2002');
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1835432805,'Marcelo','Ramos','MarceloR72@gmail.com','15/08/2008');
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1735476806,'Anthony','Agual','KAgual22@gmail.com','25/03/2002');
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1235476807,'Paula','Celi','PauCeli31@gmail.com','30/09/2010' );
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1735476808,'Mónica','Martínez','MoniMar15@gmail.com','22/01/2001');
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1235476809,'Anabel','Perlaza','WPerlaza18@gmail.com','12/04/2000');
-insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
-values (1735476810,'Sofía','Jimenez','SofiJz22@gmail.com','22/01/2001');
 
 
 select * from estudiantes
 
 select nombre,cedula from estudiantes
 
-select nombre from estudiantes where cedula like '17%'
+--inserts
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030405', 'Juan', 'Martínez', 'juan.martinez@email.com', '2005-03-15', 1);
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030406', 'Ana', 'González', 'ana.gonzalez@email.com', '2006-07-22', 2);
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030407', 'Luis', 'Fernández', 'luis.fernandez@email.com', '2005-11-30', 3);
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030408', 'María', 'Ramírez', 'maria.ramirez@email.com', '2007-01-10', 4);
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030409', 'Carlos', 'Sánchez', 'carlos.sanchez@email.com', '2006-05-18', 5);
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030410', 'Sofía', 'Pérez', 'sofia.perez@email.com', '2005-09-25', 6);
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030411', 'Pedro', 'Hernández', 'pedro.hernandez@email.com', '2007-02-14', 7);
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030412', 'Laura', 'Jiménez', 'laura.jimenez@email.com', '2006-12-05', 8);
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030413', 'Diego', 'Morales', 'diego.morales@email.com', '2005-08-08', 9);
+insert into estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) 
+values ('0102030414', 'Elena', 'Contreras', 'elena.contreras@email.com', '2007-04-20', 10);
 
-select nombre,apellido from estudiantes where nombre like 'A%'
-
-update estudiantes set apellido='Hernandez' where cedula like '17%' 
-
-select * from estudiantes where cedula like '%05'
-
-delete from estudiantes where cedula like '%05'
-
-select nombre,apellido from estudiantes
-where nombre like 'M%' or apellido like '%z'
-
-select nombre from estudiantes 
-where cedula like '%32%' and cedula like '18%'
-
-select nombre, apellido from estudiantes 
-where cedula like '%06' or cedula like '17%'
