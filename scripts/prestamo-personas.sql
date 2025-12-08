@@ -38,3 +38,17 @@ values ('0102030409', 820.60, '2023-09-20', '12:50:00', 'Elena Díaz');
 
 insert into prestamo (cedula, monto, fecha_prestamo, hora_prestamo, garante) 
 values ('0102030410', 280.40, '2023-09-25', '08:15:00', 'Laura Ramírez');
+
+--consulta obtener la cantidad ahorrada, el monto del prestamo y el garante cuyo prestamo este entre los 100 y 1000$ 
+select 
+    pe.cantidad_ahorrada,
+    p.monto,
+    p.garante
+from prestamo p
+join persona pe on p.cedula = pe.cedula
+where p.monto between 100::money and 1000::money;
+
+--subconsulta obtener todos los datos de la persona cuya cedula sea igual al nombre "Sean"
+select *
+from persona
+where nombre = 'Sean';

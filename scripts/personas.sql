@@ -38,3 +38,4 @@ values ('0102030409', 'Pedro', 'Díaz', 1.79, '1980-06-08', '16:20:00', 1900.75,
 
 insert into persona (cedula, nombre, apellido, estatura, fecha_nacimiento, hora_nacimiento, cantidad_ahorrada, numero_hijos) 
 values ('0102030410', 'Laura', 'Ramírez', 1.66, '1987-04-01', '07:50:00', 3100.00, 1);
+

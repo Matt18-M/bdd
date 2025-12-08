@@ -12,13 +12,13 @@ references transacciones(codigo);
 
 --insert
 insert into banco (codigo_banco, codigo_transaccion, detalle) 
-values (101, 1, 'Depósito inicial');
+values (201, 1, 'Depósito inicial');
 insert into banco (codigo_banco, codigo_transaccion, detalle) 
-values (102, 2, 'Retiro de efectivo');
+values (202, 2, 'Retiro de efectivo');
 insert into banco (codigo_banco, codigo_transaccion, detalle) 
-values (103, 3, 'Depósito ahorros');
+values (203, 3, 'Depósito ahorros');
 insert into banco (codigo_banco, codigo_transaccion, detalle) 
-values (104, 4, 'Pago de préstamo');
+values (204, 4, 'Pago de préstamo');
 insert into banco (codigo_banco, codigo_transaccion, detalle) 
 values (105, 5, 'Transferencia enviada');
 insert into banco (codigo_banco, codigo_transaccion, detalle) 
@@ -31,3 +31,21 @@ insert into banco (codigo_banco, codigo_transaccion, detalle)
 values (109, 9, 'Pago de servicio');
 insert into banco (codigo_banco, codigo_transaccion, detalle) 
 values (110, 10, 'Depósito extra');
+insert into banco (codigo_banco, codigo_transaccion, detalle) 
+values (1, 1110, 'Depósito inicial - Cuenta 22001');
+
+--consulta obtener todas las transacciones de tipo "C" cuyo numero de cuenta este entre "22001 y 22004"
+select t.*, b.detalle
+from transacciones t, banco b
+where t.codigo = b.codigo_transaccion
+and t.tipo = 'C'
+and t.numero_cuenta between '22001' and '22004';
+
+--subconsulta obtener todos los datos de transacciones cuyo codigo corresponde al codigo de transaccion de banco 1
+select *
+from transacciones
+where codigo = (
+    select codigo_transaccion
+    from banco
+    where codigo_banco = 1
+);

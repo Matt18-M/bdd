@@ -64,3 +64,13 @@ insert into compras (id_compra, cedula, fecha_compra, monto)
 values(1001, '0150560788', '2023-10-05', 95.75);
 insert into compras (id_compra, cedula, fecha_compra, monto)
 values(1011, '0150560221', '2023-10-05', 95.75);
+
+
+--consulta nombre y apellido con numero 7 en la cedula
+select cl.nombre,cl.apellido
+from clientes cl
+where cl.cedula like '%7%';
+
+--subconsulta de los clientes cuya cedula sea igual ala cedula de nombre "Monica"
+select * 
+from clientes cl where cl.nombre= 'Mónica';

@@ -131,6 +131,6 @@ values (8, '0102030408', '2023-10-30', '10:25', 2208);
 insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
 values (9, '0102030409', '2023-11-22', '11:55', 2209);
 insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) 
-values (10, '0102030410', '2023-12-20', '12:40', 2210);
+values (12, '2201', '2023-12-20', '12:40', 2210);
 
 

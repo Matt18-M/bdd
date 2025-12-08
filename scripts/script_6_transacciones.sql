@@ -37,13 +37,13 @@ insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
 values(0009, '18803', '45,25', 'D', '23/01/2024', '07:30');
 
 insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
-values(0010, '22001', '50,40', 'D', '15/01/2024', '09:15');
+values(1110, '22001', '50,40', 'C', '15/01/2024', '09:15');
 
 insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
 values(0023, '22003', '450,40', 'C', '15/09/2024', '16:15');
 
 insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
-values(0022, '22004', '150,40', 'D', '29/05/2025', '18:15');
+values(1122, '22004', '150,40', 'C', '29/05/2025', '18:15');
 
 insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
 values(0014, '22002', '350,40', 'C', '27/05/2025', '15:15');

@@ -120,3 +120,15 @@ values ('17512', 'claudia', 'romero', 'ahorros', 65000);
 
 insert into usuario (cedula, nombre, apellido, tipo_cuenta, limite_credito) 
 values ('17503', 'mario', 'santos', 'corriente', 70000);
+
+--consulta numero de cuenta y nombres
+select cu.numero_cuenta,u.nombre
+from cuentas cu,usuario u
+where cu.cedula_primaria = u.cedula
+and cu.saldo between 100::money and 1000::money;
+
+--subconsulta de todos los datos con usuario de fecha de creacion entre "2022-09-21, 2023-09-21"
+select * from cuentas cu, usuario u
+where cu.cedula_primaria = u.cedula
+and cu.fecha_creacion between '2022-09-21' and '2023-09-21';
+

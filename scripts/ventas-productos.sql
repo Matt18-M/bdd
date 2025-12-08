@@ -34,8 +34,20 @@ insert into ventas (id_venta, codigo_producto, fecha_venta, cantidad)
 values (10, 10, '2023-02-01', 3);
 
 
+--consulta obtener el nombre,stock y cantidad de productos y ventas cuyo nombre contiene la letra "m" o la descripcion sea igual a 0
+select 
+    p.nombre,
+    p.stock,
+    v.cantidad
+from productos p, ventas v
+where p.codigo = v.codigo_producto
+and (p.nombre ilike '%m%' or p.descripcion is null);
 
 
-
+--subconsulta obtener nombre y stock de los productos donde el codigo de producto de las venta sea una cantidad de 5
+select distinct p.nombre, p.stock
+from productos p, ventas v
+where p.codigo = v.codigo_producto
+and v.cantidad = 5;
 
 

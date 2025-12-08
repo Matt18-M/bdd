@@ -71,7 +71,7 @@ insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values(63549, 'Dragon Ball', 'juego de baile', 8);
 
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
-values(63550, 'God of War', 'Guerra', 4);
+values(63522, 'God of War', 'Guerra', 8);
 
 select * from videojuegos
 
