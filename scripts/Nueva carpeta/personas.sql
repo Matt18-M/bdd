@@ -9,7 +9,6 @@ create table persona(
     numero_hijos int
 );
 
-
 insert into persona (cedula, nombre, apellido, estatura, fecha_nacimiento, hora_nacimiento, cantidad_ahorrada, numero_hijos) 
 values ('0102030401', 'Sean', 'García', 1.75, '1990-05-15', '08:30:00', 5000.00, 2);
 
@@ -38,6 +37,5 @@ insert into persona (cedula, nombre, apellido, estatura, fecha_nacimiento, hora_
 values ('0102030409', 'Pedro', 'Díaz', 1.79, '1980-06-08', '16:20:00', 1900.75, 2);
 
 insert into persona (cedula, nombre, apellido, estatura, fecha_nacimiento, hora_nacimiento, cantidad_ahorrada, numero_hijos) 
-values ('0150030411', 'Mateo', 'Roberto', 1.66, '1987-04-01', '07:50:00', 3100.00, 1);
+values ('0102030410', 'Laura', 'Ramírez', 1.66, '1987-04-01', '07:50:00', 3100.00, 1);
 
-select * from persona
