@@ -1,6 +1,6 @@
 drop table if exists cabecera_ventas;
 create table cabecera_ventas(
-codigo int not null,
+codigo serial not null,
 fecha timestamp without time zone not null,
 total_sin_iva money not null,
 iva money not null,
@@ -11,7 +11,7 @@ constraint cabecera_ventas_pk primary key(codigo)
 
 drop table if exists detalle_ventas;
 create table detalle_ventas(
-codigo int not null,
+codigo serial not null,
 cabecera_ventas int not null,
 producto char not null,
 cantidad int not null,

@@ -9,7 +9,7 @@ constraint estado_pedido_pk primary key(codigo)
 drop table if exists cabecera_pedidos;
 create table cabecera_pedidos(
 numero int not null,
-proveedor int not null,
+proveedor varchar(20) not null,
 fecha date not null,
 estado char not null,
 constraint cabecera_pedidos_pk primary key(numero),

@@ -1,6 +1,6 @@
 drop table if exists detalle_pedidos;
 create table detalle_pedidos(
-codigo int not null,
+codigo serial not null,
 cabecera_pedido int not null,
 producto char not null,
 cantidad_solicitada int not null,

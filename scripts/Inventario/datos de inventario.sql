@@ -26,13 +26,13 @@ insert into categorias (codigo_cat, nombre, categoria_padre) values
 
 -- Tabla: tipo_documentos
 insert into tipo_documentos (codigo, descripcion) values
-('C', 'cedula'),
-('R', 'ruc');
+('C', 'CEDULA'),
+('R', 'RUC');
 
 -- Tabla: proveedores
 insert into proveedores (identificador, tipo_documento, nombre, telefono, correo, direccion) values
-(101, 'R', 'Distribuidora Alimentos S.A.', '02-2345678', 'ventas@dalimentos.com', 'Av. Principal 123, Quito'),
-(102, 'R', 'Bebidas Nacionales C.A.', '04-3456789', 'pedidos@bebidasnac.com', 'Calle Comercio 456, Guayaquil');
+('013456789', 'R', 'Distribuidora Alimentos S.A.', '02-2345678', 'ventas@dalimentos.com', 'Av. Principal 123, Quito'),
+('023457888', 'R', 'Bebidas Nacionales C.A.', '04-3456789', 'pedidos@bebidasnac.com', 'Calle Comercio 456, Guayaquil');
 
 -- Tabla: estado_pedido
 insert into estado_pedido (codigo, descripcion) values
@@ -48,14 +48,14 @@ insert into productos (codigo_producto, nombre, udm, precio_venta, tiene_iva, co
 
 -- Tabla: cabecera_pedidos 
 insert into cabecera_pedidos (numero, proveedor, fecha, estado) values
-(1, 102, '2026-01-10', 'R'),
-(2, 102, '2026-01-15', 'R');
+(3, '023457888', '2026-01-10', 'R'),
+(4, '023457888', '2026-01-15', 'R');
 
 -- Tabla: detalle_pedidos
-insert into detalle_pedidos (codigo, cabecera_pedido, producto, cantidad_solicitada, subtotal, cantidad_recibida) values
-(1, 1, '1', 100, 37.29, 100),
-(2, 1, '4', 50, 11.8, 50),
-(3, 2, '1', 10, 3.73, 10);
+insert into detalle_pedidos (cabecera_pedido, producto, cantidad_solicitada, subtotal, cantidad_recibida) values
+(1, '1', 100, 37.29, 100),
+(1, '4', 50, 11.8, 50),
+(2, '1', 10, 3.73, 10);
 
 -- Tabla: historial_stock 
 insert into historial_stock (codigo, fecha, referencia, producto, cantidad) values
@@ -90,3 +90,6 @@ select * from cabecera_ventas;
 select * from proveedores;
 select * from estado_pedido;
 select * from detalle_ventas;
+
+
+SELECT * FROM detalle_pedidos WHERE codigo = 5 AND cabecera_pedido = 7;

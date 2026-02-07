@@ -1,6 +1,6 @@
 drop table if exists proveedores;
 create table proveedores(
-identificador int not null,
+identificador varchar(20) not null,
 tipo_documento char(2) not null,
 nombre varchar(100),
 telefono varchar(20),
